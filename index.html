@@ -15,8 +15,33 @@
 </html>
 
 
-// create a new folder and go to it at the same time:
-// mkdir folder-name && cd $_
 
-// create a new branch and go to it
-// git checkout -b this-is-a-new-branch-name
+
+/**********************
+
+create a new folder and go to it at the same time:
+command: mkdir folder-name && cd $_
+
+create a new branch and go to it
+command: git checkout -b this-is-a-new-branch-name
+
+Always merge other branch to the master. not the other way around. which mean you always checkout the master before type any merge command
+
+when stand from master, and want to merge first-branch to master, 
+command: git merge first-branch
+
+Delete a branch
+command: git branch -D first-branch
+
+Check the different between two commit
+1/ find harsh number of each commit:
+command: git log --oneline
+'git log --oneline
+15855b4 (HEAD -> master, first-branch) added h2 to first-branch
+dd8f896 innitial commit'
+2/ use the two harsh numbers in result for the command to see the different:
+command: git diff 15855b4..dd8f896
+
+Add a remote link:
+git remote add origin link
+ **********************/
